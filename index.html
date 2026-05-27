@@ -160,7 +160,7 @@ footer{padding:56px 5vw 36px;border-top:1px solid var(--border)}
 <div class="hero-tag"><div class="tag-dot"></div><span data-t="hero_tag">Диспетчерская ИИ-система нового поколения</span></div>
 <h1><span class="l1" data-t="hero_h1a">Управляй парком.</span><span class="l2" data-t="hero_h1b">Забудь про хаос.</span></h1>
 <p class="hero-sub"><span data-t="hero_sub">Каждая пустая машина — это потерянные деньги. <strong>Fletera</strong> — ИИ-система, которая <strong>сама думает</strong>: куда отправить машину, где найти обратный груз, как не потерять ни одного рейса. Ты управляешь — ИИ зарабатывает.</span></p>
-<div class="hero-btns"><button class="btn-primary" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})" data-t="hero_cta">Начать бесплатно →</button><button class="btn-ghost" onclick="window.open('index.html','_blank')" data-t="hero_demo">Смотреть демо</button></div>
+<div class="hero-btns"><button class="btn-primary" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})" data-t="hero_cta">Начать бесплатно →</button></div>
 <div class="hero-screen reveal">
 <div class="mock-bar"><div class="mock-dot" style="background:#ef4444"></div><div class="mock-dot" style="background:#f59e0b"></div><div class="mock-dot" style="background:#22c55e"></div><div class="mock-tabs"><div class="mock-tab active">Парк (15)</div><div class="mock-tab">Рейс (9)</div><div class="mock-tab">Клиенты</div><div class="mock-tab">Заказы</div></div></div>
 <div class="mock-body">
@@ -179,26 +179,142 @@ footer{padding:56px 5vw 36px;border-top:1px solid var(--border)}
 <div style="text-align:center;margin-bottom:64px"><span class="section-eyebrow" data-t="s_eyebrow">Посмотри как работает</span><h2 class="section-title" data-t="s_title">6 вещей которые Fletera<br>делает вместо тебя</h2></div>
 <div class="screen-row reveal ">
 <div class="screen-text"><span class="screen-eyebrow" style="color:#3b82f6;background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2)" data-t="f1_tag">ИИ-планирование</span><h3 class="screen-title" data-t="f1_h">ИИ сам выбирает лучшую машину</h3><p class="screen-desc" data-t="f1_p">Нажал «Планирование» → выбрал клиента → ИИ сравнил все машины. Рейтинг 0–100. Один клик — машина назначена.</p><div class="screen-tip" style="border-color:#3b82f6;background:rgba(37,99,235,.1)" data-t="f1_tip">💡 <strong style="color:var(--white)">Выгода:</strong> не тратишь 20 мин — ИИ находит за 2 секунды</div></div>
-<div class="screen-mock" style="border:1px solid rgba(37,99,235,.2)"><div class="mock-head" style="background:rgba(37,99,235,.1);border-bottom:1px solid rgba(37,99,235,.2);color:#3b82f6" data-t="sc1_mock">ИИ-планирование</div><div class="mock-body2" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px" data-t="sc_prev">Превью интерфейса</div></div>
+<div class="screen-mock" style="border:1px solid rgba(37,99,235,.2)"><div class="mock-head" style="background:rgba(37,99,235,.1);border-bottom:1px solid rgba(37,99,235,.2);color:#3b82f6" data-t="sc1_mock">ИИ-планирование</div><div class="mock-body2" style="min-height:120px"><div style="padding:12px;font-size:12px">
+  <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">ПОДБОР МАШИНЫ · Москва → Казань</div>
+  <div style="display:flex;flex-direction:column;gap:6px">
+    <div style="background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.4);border-radius:8px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center">
+      <div><div style="color:#fff;font-weight:600;font-size:12px">КА 1234 МО · МАЗ 5340</div><div style="color:#94a3b8;font-size:11px">Иванов А.П. · свободен</div></div>
+      <div style="background:#3b82f6;color:#fff;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700">98</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center">
+      <div><div style="color:#cbd5e1;font-size:12px">МВ 5678 МО · КАМАЗ</div><div style="color:#64748b;font-size:11px">Петров С. · в пути</div></div>
+      <div style="background:rgba(255,255,255,.1);color:#94a3b8;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700">61</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center">
+      <div><div style="color:#cbd5e1;font-size:12px">ТА 9012 МО · Volvo</div><div style="color:#64748b;font-size:11px">Сидоров В. · загрузка</div></div>
+      <div style="background:rgba(255,255,255,.1);color:#94a3b8;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700">34</div>
+    </div>
+  </div>
+  <div style="margin-top:8px;background:#3b82f6;color:#fff;border-radius:7px;padding:6px;text-align:center;font-size:11px;font-weight:600">✓ Назначить КА 1234</div>
+</div></div></div>
 </div>
 <div class="screen-row reveal d1">
-<div class="screen-mock mobile-hidden" style="border:1px solid rgba(6,182,212,.2)"><div class="mock-head" style="background:rgba(6,182,212,.1);border-bottom:1px solid rgba(6,182,212,.2);color:#06b6d4" data-t="sc2_mock">←← Обратный груз</div><div class="mock-body2" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px" data-t="sc_prev">Превью интерфейса</div></div>
+<div class="screen-mock mobile-hidden" style="border:1px solid rgba(6,182,212,.2)"><div class="mock-head" style="background:rgba(6,182,212,.1);border-bottom:1px solid rgba(6,182,212,.2);color:#06b6d4" data-t="sc2_mock">←← Обратный груз</div><div class="mock-body2" style="min-height:120px"><div style="padding:12px;font-size:12px">
+  <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">ОБРАТНЫЙ ГРУЗ · Казань → Москва</div>
+  <div style="display:flex;flex-direction:column;gap:6px">
+    <div style="background:rgba(6,182,212,.12);border:1px solid rgba(6,182,212,.35);border-radius:8px;padding:8px 10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <div style="color:#fff;font-weight:600;font-size:12px">АгроПром · 5т</div>
+        <div style="color:#06b6d4;font-size:11px;font-weight:700">+12 400 ₽</div>
+      </div>
+      <div style="color:#94a3b8;font-size:11px">ул. Баумана 12 → Варшавское ш. 9</div>
+      <div style="margin-top:6px;background:#06b6d4;color:#fff;border-radius:5px;padding:4px 8px;font-size:11px;font-weight:600;display:inline-block">Взять груз →</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:8px 10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <div style="color:#cbd5e1;font-size:12px">МеталлТорг · 8т</div>
+        <div style="color:#64748b;font-size:11px">+9 800 ₽</div>
+      </div>
+      <div style="color:#64748b;font-size:11px">пр. Победы 7 → Волгоградский пр. 3</div>
+    </div>
+  </div>
+</div></div></div>
 <div class="screen-text"><span class="screen-eyebrow" style="color:#06b6d4;background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.2)">←← Обратный груз</span><h3 class="screen-title" data-t="f2_h">Пустая машина — потерянные деньги</h3><p class="screen-desc" data-t="f2_p">Fletera предлагает обратный груз пока машина едет туда. Выбираешь из готовых заказов — адрес уже вбит.</p><div class="screen-tip" style="border-color:#06b6d4;background:rgba(6,182,212,.1)" data-t="f2_tip">💡 <strong style="color:var(--white)">Выгода:</strong> 1 пустой рейс Минск–Москва = ~15 000 ₽ потерь</div></div>
 </div>
 <div class="screen-row reveal ">
 <div class="screen-text"><span class="screen-eyebrow" style="color:#25d366;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.2)" data-t="f3_tag">💬 Сообщение водителю</span><h3 class="screen-title" data-t="f3_h">Нажал одну кнопку — водитель получил всё</h3><p class="screen-desc" data-t="f3_p">Машина, клиент, адреса, время, примечания склада — одним сообщением в WhatsApp, Telegram или Viber.</p><div class="screen-tip" style="border-color:#25d366;background:rgba(37,211,102,.1)" data-t="f3_tip">💡 <strong style="color:var(--white)">Выгода:</strong> экономишь 5–10 мин на каждом рейсе</div></div>
-<div class="screen-mock" style="border:1px solid rgba(37,211,102,.2)"><div class="mock-head" style="background:rgba(37,211,102,.1);border-bottom:1px solid rgba(37,211,102,.2);color:#25d366" data-t="sc3_mock">💬 Сообщение водителю</div><div class="mock-body2" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px" data-t="sc_prev">Превью интерфейса</div></div>
+<div class="screen-mock" style="border:1px solid rgba(37,211,102,.2)"><div class="mock-head" style="background:rgba(37,211,102,.1);border-bottom:1px solid rgba(37,211,102,.2);color:#25d366" data-t="sc3_mock">💬 Сообщение водителю</div><div class="mock-body2" style="min-height:120px"><div style="padding:12px;font-size:12px">
+  <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">СООБЩЕНИЕ · Иванов А.П.</div>
+  <div style="background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);border-radius:8px;padding:10px;font-size:11px;line-height:1.7;color:#e2e8f0">
+    🚛 <b>Рейс #1047</b><br>
+    📍 Загрузка: ул. Ленина 45, склад №3<br>
+    📍 Выгрузка: пр. Мира 12, офис 201<br>
+    👤 Клиент: ООО АгроПром<br>
+    🕐 Прибыть к 09:00<br>
+    📞 Диспетчер: +7 999 123-45-67
+  </div>
+  <div style="display:flex;gap:6px;margin-top:8px">
+    <div style="flex:1;background:#25d366;color:#fff;border-radius:7px;padding:6px;text-align:center;font-size:11px;font-weight:600">WhatsApp ✓</div>
+    <div style="flex:1;background:rgba(255,255,255,.08);color:#94a3b8;border-radius:7px;padding:6px;text-align:center;font-size:11px">Telegram</div>
+  </div>
+</div></div></div>
 </div>
 <div class="screen-row reveal d1">
-<div class="screen-mock mobile-hidden" style="border:1px solid rgba(167,139,250,.2)"><div class="mock-head" style="background:rgba(167,139,250,.1);border-bottom:1px solid rgba(167,139,250,.2);color:#a78bfa" data-t="f4_tag">📱 Статусы водителя</div><div class="mock-body2" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px" data-t="sc_prev">Превью интерфейса</div></div>
+<div class="screen-mock mobile-hidden" style="border:1px solid rgba(167,139,250,.2)"><div class="mock-head" style="background:rgba(167,139,250,.1);border-bottom:1px solid rgba(167,139,250,.2);color:#a78bfa" data-t="f4_tag">📱 Статусы водителя</div><div class="mock-body2" style="min-height:120px"><div style="padding:12px;font-size:12px">
+  <div style="color:#94a3b8;font-size:11px;margin-bottom:4px">ВОДИТЕЛЬ · Иванов А.П. · PIN 4821</div>
+  <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:10px">Рейс #1047 · Москва → Казань</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+    <div style="background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.4);border-radius:8px;padding:8px;text-align:center">
+      <div style="font-size:18px">📦</div>
+      <div style="color:#22c55e;font-size:10px;font-weight:700;margin-top:2px">ЗАГРУЗИЛСЯ</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px;text-align:center">
+      <div style="font-size:18px">🚛</div>
+      <div style="color:#64748b;font-size:10px;font-weight:700;margin-top:2px">В ПУТИ</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px;text-align:center">
+      <div style="font-size:18px">✅</div>
+      <div style="color:#64748b;font-size:10px;font-weight:700;margin-top:2px">ВЫГРУЗИЛСЯ</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px;text-align:center">
+      <div style="font-size:18px">⚠️</div>
+      <div style="color:#64748b;font-size:10px;font-weight:700;margin-top:2px">ПРОБЛЕМА</div>
+    </div>
+  </div>
+</div></div></div>
 <div class="screen-text"><span class="screen-eyebrow" style="color:#a78bfa;background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2)">📱 Статусы водителя</span><h3 class="screen-title" data-t="f4_h">Водитель сам отмечает всё</h3><p class="screen-desc" data-t="f4_p">Водитель открывает ссылку, вводит PIN — видит кнопки. Нажал «Загрузился» — ты моментально видишь. Никаких звонков.</p><div class="screen-tip" style="border-color:#a78bfa;background:rgba(167,139,250,.1)" data-t="f4_tip">💡 <strong style="color:var(--white)">Выгода:</strong> -15 звонков в день</div></div>
 </div>
 <div class="screen-row reveal ">
 <div class="screen-text"><span class="screen-eyebrow" style="color:#f59e0b;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2)" data-t="f5_tag">🔄 Пересадка</span><h3 class="screen-title" data-t="f5_h">Поменял водителей — 5 секунд</h3><p class="screen-desc" data-t="f5_p">Кнопка «Пересадка» → выбираешь машину → водители меняются местами вместе с PIN. Рейсы остаются.</p><div class="screen-tip" style="border-color:#f59e0b;background:rgba(245,158,11,.1)" data-t="f5_tip">💡 <strong style="color:var(--white)">Выгода:</strong> не нужно вручную менять данные</div></div>
-<div class="screen-mock" style="border:1px solid rgba(245,158,11,.2)"><div class="mock-head" style="background:rgba(245,158,11,.1);border-bottom:1px solid rgba(245,158,11,.2);color:#f59e0b" data-t="sc5_mock">🔄 Пересадка</div><div class="mock-body2" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px" data-t="sc_prev">Превью интерфейса</div></div>
+<div class="screen-mock" style="border:1px solid rgba(245,158,11,.2)"><div class="mock-head" style="background:rgba(245,158,11,.1);border-bottom:1px solid rgba(245,158,11,.2);color:#f59e0b" data-t="sc5_mock">🔄 Пересадка</div><div class="mock-body2" style="min-height:120px"><div style="padding:12px;font-size:12px">
+  <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">ПЕРЕСАДКА ВОДИТЕЛЕЙ</div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <div style="color:#fff;font-size:12px;font-weight:600">КА 1234 МО</div>
+        <div style="color:#f59e0b;font-size:11px">Иванов А.П.</div>
+      </div>
+      <div style="color:#94a3b8;font-size:18px">⇄</div>
+      <div style="text-align:right">
+        <div style="color:#fff;font-size:12px;font-weight:600">МВ 5678 МО</div>
+        <div style="color:#f59e0b;font-size:11px">Петров С.В.</div>
+      </div>
+    </div>
+    <div style="background:#f59e0b;color:#000;border-radius:7px;padding:6px;text-align:center;font-size:11px;font-weight:700">✓ Поменять местами</div>
+    <div style="color:#64748b;font-size:10px;text-align:center">PIN обновится автоматически</div>
+  </div>
+</div></div></div>
 </div>
 <div class="screen-row reveal d1">
-<div class="screen-mock mobile-hidden" style="border:1px solid rgba(37,99,235,.2)"><div class="mock-head" style="background:rgba(37,99,235,.1);border-bottom:1px solid rgba(37,99,235,.2);color:#3b82f6" data-t="f6_tag">📍 Мультиточки</div><div class="mock-body2" style="min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px" data-t="sc_prev">Превью интерфейса</div></div>
+<div class="screen-mock mobile-hidden" style="border:1px solid rgba(37,99,235,.2)"><div class="mock-head" style="background:rgba(37,99,235,.1);border-bottom:1px solid rgba(37,99,235,.2);color:#3b82f6" data-t="f6_tag">📍 Мультиточки</div><div class="mock-body2" style="min-height:120px"><div style="padding:12px;font-size:12px">
+  <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">МАРШРУТ · КА 1234 МО</div>
+  <div style="display:flex;flex-direction:column;gap:4px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <div style="width:20px;height:20px;background:#3b82f6;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;flex-shrink:0">1</div>
+      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:6px;padding:6px 8px">
+        <div style="color:#fff;font-size:11px;font-weight:600">ООО АгроПром</div>
+        <div style="color:#64748b;font-size:10px">ул. Ленина 45 · 09:00</div>
+      </div>
+    </div>
+    <div style="width:2px;height:10px;background:rgba(255,255,255,.15);margin-left:9px"></div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div style="width:20px;height:20px;background:#06b6d4;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;flex-shrink:0">2</div>
+      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:6px;padding:6px 8px">
+        <div style="color:#fff;font-size:11px;font-weight:600">ИП Соколов</div>
+        <div style="color:#64748b;font-size:10px">пр. Мира 12 · 11:30</div>
+      </div>
+    </div>
+    <div style="width:2px;height:10px;background:rgba(255,255,255,.15);margin-left:9px"></div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div style="width:20px;height:20px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;flex-shrink:0">3</div>
+      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:6px;padding:6px 8px">
+        <div style="color:#fff;font-size:11px;font-weight:600">МеталлТорг</div>
+        <div style="color:#64748b;font-size:10px">ш. Варшавское 9 · 14:00</div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:8px;color:#22c55e;font-size:10px;text-align:center">↗ Отправлено в WhatsApp</div>
+</div></div></div>
 <div class="screen-text"><span class="screen-eyebrow" style="color:#3b82f6;background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2)">📍 Мультиточки</span><h3 class="screen-title" data-t="f6_h">2–3–4 клиента за один рейс</h3><p class="screen-desc" data-t="f6_p">Добавляй точки — адрес подставляется автоматически. Время рассчитывается само. Водитель видит весь маршрут в WA.</p><div class="screen-tip" style="border-color:#3b82f6;background:rgba(37,99,235,.1)" data-t="f6_tip">💡 <strong style="color:var(--white)">Выгода:</strong> одна машина делает работу двух</div></div>
 </div>
 </section>
@@ -247,7 +363,7 @@ ru:{
   hero_tag:'Диспетчерская ИИ-система нового поколения',
   hero_h1a:'Управляй парком.',hero_h1b:'Забудь про хаос.',
   hero_sub:'Каждая пустая машина — это потерянные деньги. <strong>Fletera</strong> — ИИ-система, которая <strong>сама думает</strong>: куда отправить машину, где найти обратный груз, как не потерять ни одного рейса. Ты управляешь — ИИ зарабатывает.',
-  hero_cta:'Начать бесплатно →',hero_demo:'Смотреть демо',
+  hero_cta:'Начать бесплатно →',
   num1:'машин в реальном времени',num2:'быстрее назначение рейсов',num3:'потерянных обраток',num4:'логист в штате',
   s_eyebrow:'Посмотри как работает',s_title:'6 вещей которые Fletera<br>делает вместо тебя',
   f1_tag:'ИИ-планирование',f1_h:'ИИ сам выбирает лучшую машину',f1_p:'Нажал «Планирование» → выбрал клиента → ИИ сравнил все машины. Рейтинг 0–100. Один клик — машина назначена.',f1_tip:'💡 <strong style="color:var(--white)">Выгода:</strong> не тратишь 20 мин — ИИ находит за 2 секунды',
@@ -295,7 +411,7 @@ en:{
   hero_tag:'Next-gen AI dispatch system',
   hero_h1a:'Manage your fleet.',hero_h1b:'Forget the chaos.',
   hero_sub:'Every empty truck is lost money. <strong>Fletera</strong> — AI system that <strong>thinks for you</strong>: where to send the truck, how to find backloads, how to never lose a trip. You manage — AI earns.',
-  hero_cta:'Start free →',hero_demo:'Watch demo',
+  hero_cta:'Start free →',
   num1:'trucks in real time',num2:'faster trip assignment',num3:'lost backloads',num4:'logistics manager on staff',
   s_eyebrow:'See how it works',s_title:'6 things Fletera<br>does instead of you',
   f1_tag:'AI Planning',f1_h:'AI picks the best truck automatically',f1_p:'Click "Planning" → select client → AI compares all trucks. Score 0–100. One click — truck assigned.',f1_tip:'💡 <strong style="color:var(--white)">Benefit:</strong> saves 20 min — AI finds in 2 seconds',
